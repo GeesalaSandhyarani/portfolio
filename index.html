@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geesala Sandhyarani — Portfolio</title>
+    <meta name="description" content="Portfolio of Geesala Sandhyarani, Final-year B.Tech student in AI & ML and Frontend Developer. Explore projects in Machine Learning, Web Development, and academic solutions.">
+    <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons for Slick Accents -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-ring" class="custom-cursor-ring"></div>
+
+    <!-- Glowing Background Orbs -->
+    <div class="bg-glow orb-1"></div>
+    <div class="bg-glow orb-2"></div>
+    <div class="bg-glow orb-3"></div>
+
+    <!-- Header / Floating Glassmorphic Navbar -->
+    <header class="navbar-container">
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-logo" id="logo-link">
+                <span class="logo-accent">G</span><span>S.</span>
+            </a>
+            <div class="nav-links-wrapper">
+                <!-- Nav indicator capsule for smooth sliding effect -->
+                <div class="nav-indicator" id="nav-indicator"></div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+                    <li><a href="#projects" class="nav-link" data-target="projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-target="skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" data-target="experience">Experience</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary nav-cta-btn" id="nav-cta">Get in Touch</a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Open for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Engineering Intelligent Systems & <span class="gradient-text">Clean Interfaces</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        I am Geesala Sandhyarani, a final-year B.Tech student in Artificial Intelligence & Machine Learning (CGPA 9.03) at Sridevi Women's Engineering College. I specialize in building responsive frontend designs and deploying data-driven machine learning models.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span> <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <div class="hero-socials">
+                            <a href="https://www.linkedin.com/in/sandhyarani-geesala-0957172aa/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/GeesalaSandhyarani" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper reveal delay-1">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-border">
+                        <img src="assets/profile.jpg" alt="Geesala Sandhyarani Photo" class="hero-image" id="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Academic & Independent Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-desc">Selected projects demonstrating expertise in full-stack web applications, machine learning analytics, and clean frontend UI implementation.</p>
+                </div>
+
+                <div class="projects-grid geesala-projects-grid">
+                    <!-- Project 1: Save Environment with Plastic Recycle -->
+                    <div class="project-card reveal" data-project-id="plastic-recycle">
+                        <div class="project-card-image-container">
+                            <img src="assets/plastic_recycle_mockup.png" alt="Save Environment with Plastic Recycle App Mockup" class="project-card-image">
+                            <div class="project-card-overlay">
+                                <span class="view-btn">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Web</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3 class="project-card-title">Save Environment with Plastic Recycle</h3>
+                            <p class="project-card-desc">An interactive web platform that scans plastic items, identifies their chemical code, and determines local recyclability metrics dynamically.</p>
+                            <div class="project-card-footer">
+                                <span class="project-role"><strong>Stack:</strong> HTML, CSS, JS, Python, Node, MySQL</span>
+                                <span class="project-impact"><i class="fa-solid fa-leaf text-accent"></i> Eco Scan Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Crime Pattern Analysis using Machine Learning -->
+                    <div class="project-card reveal delay-1" data-project-id="crime-analysis">
+                        <div class="project-card-image-container">
+                            <img src="assets/crime_analysis_mockup.png" alt="Crime Pattern Analysis UI Mockup" class="project-card-image">
+                            <div class="project-card-overlay">
+                                <span class="view-btn">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">ARIMA / Prophet</span>
+                            </div>
+                            <h3 class="project-card-title">Crime Pattern Analysis using ML</h3>
+                            <p class="project-card-desc">Advanced ML models predicting local crime trends, identifying high-risk geographic hotspots via clustering, and visualizing insights.</p>
+                            <div class="project-card-footer">
+                                <span class="project-role"><strong>Stack:</strong> Python, Scikit-learn, Pandas, Prophet</span>
+                                <span class="project-impact"><i class="fa-solid fa-shield-halved text-accent"></i> Hotspot Clustering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: GradeIQ – Credit-Weighted CGPA Calculator -->
+                    <div class="project-card reveal" data-project-id="gradeiq">
+                        <div class="project-card-image-container">
+                            <img src="assets/gradeiq_mockup.png" alt="GradeIQ Calculator Mobile Interface" class="project-card-image">
+                            <div class="project-card-overlay">
+                                <span class="view-btn">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-tags">
+                                <span class="tag">Frontend</span>
+                                <span class="tag">Web Tool</span>
+                                <span class="tag">Responsive UI</span>
+                            </div>
+                            <h3 class="project-card-title">GradeIQ – SGPA & CGPA Calculator</h3>
+                            <p class="project-card-desc">A fully responsive academic calculator supporting credit-weighted academic calculation using custom validation workflows.</p>
+                            <div class="project-card-footer">
+                                <span class="project-role"><strong>Stack:</strong> HTML5, CSS3, JavaScript</span>
+                                <span class="project-impact"><i class="fa-solid fa-calculator text-accent"></i> Deployed on GitHub Pages</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Expertise Section -->
+        <section id="skills" class="skills-section section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Core Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-desc">Bridging the gap between software development and machine learning pipelines to solve complex mathematical challenges.</p>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-grid">
+                        <div class="skill-category reveal">
+                            <div class="skill-header">
+                                <span class="skill-icon-box"><i class="fa-brands fa-html5"></i></span>
+                                <h3 class="skill-category-title">Web Technologies</h3>
+                            </div>
+                            <p class="skill-category-desc">Crafting responsive interfaces, semantic structure, custom CSS animations, and interactive vanilla JavaScript logics.</p>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-fill" style="width: 90%;"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category reveal delay-1">
+                            <div class="skill-header">
+                                <span class="skill-icon-box"><i class="fa-brands fa-python"></i></span>
+                                <h3 class="skill-category-title">Programming</h3>
+                            </div>
+                            <p class="skill-category-desc">Writing clean Python pipelines, object-oriented concepts, algorithm structures in Java/C, and structured MySQL queries.</p>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-fill" style="width: 88%;"></div>
+                                </div>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category reveal">
+                            <div class="skill-header">
+                                <span class="skill-icon-box"><i class="fa-solid fa-brain"></i></span>
+                                <h3 class="skill-category-title">Machine Learning / AI</h3>
+                            </div>
+                            <p class="skill-category-desc">Applying Scikit-learn, data analytics (Pandas, NumPy), clustering models, and data forecasting (ARIMA, Prophet) tools.</p>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-track">
+                                    <div class="skill-progress-fill" style="width: 85%;"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Logo Tags -->
+                    <div class="skills-tags-container reveal">
+                        <h4 class="tags-title">Languages & Tools</h4>
+                        <div class="tags-grid">
+                            <span class="tag-badge"><i class="fa-brands fa-python text-accent"></i> Python</span>
+                            <span class="tag-badge"><i class="fa-brands fa-java text-accent"></i> Java</span>
+                            <span class="tag-badge"><i class="fa-solid fa-code text-accent"></i> C</span>
+                            <span class="tag-badge"><i class="fa-brands fa-html5 text-accent"></i> HTML5</span>
+                            <span class="tag-badge"><i class="fa-brands fa-css3-alt text-accent"></i> CSS3</span>
+                            <span class="tag-badge"><i class="fa-brands fa-js text-accent"></i> JavaScript</span>
+                            <span class="tag-badge"><i class="fa-solid fa-database text-accent"></i> MySQL</span>
+                            <span class="tag-badge"><i class="fa-brands fa-git-alt text-accent"></i> Git & GitHub</span>
+                            <span class="tag-badge"><i class="fa-solid fa-terminal text-accent"></i> VS Code</span>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Grid -->
+                    <div class="certifications-block reveal">
+                        <h4 class="block-title"><i class="fa-solid fa-award text-accent"></i> Certifications</h4>
+                        <div class="certifications-grid">
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+                                <div class="cert-content">
+                                    <h5>OCI Generative AI Professional</h5>
+                                    <p>Oracle</p>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                                <div class="cert-content">
+                                    <h5>Data Analytics Job Simulation</h5>
+                                    <p>Deloitte (Forage)</p>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-lock"></i></div>
+                                <div class="cert-content">
+                                    <h5>Introduction to Cybersecurity</h5>
+                                    <p>Cisco Networking Academy</p>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                                <div class="cert-content">
+                                    <h5>Introduction to Python</h5>
+                                    <p>Infosys Springboard</p>
+                                </div>
+                            </div>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-check-double"></i></div>
+                                <div class="cert-content">
+                                    <h5>Python Skill Certification</h5>
+                                    <p>OneRoadmap</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coding Profiles Block -->
+                    <div class="coding-profiles-block reveal" style="margin-top: 60px; text-align: left;">
+                        <h4 class="block-title"><i class="fa-solid fa-code text-accent"></i> Coding Profiles</h4>
+                        <div class="coding-profiles-grid">
+                            <a href="https://leetcode.com/u/sandhyaranigeesala/" target="_blank" rel="noopener noreferrer" class="coding-card glass-card">
+                                <div class="coding-icon"><i class="fa-solid fa-code-branch"></i></div>
+                                <div class="coding-info">
+                                    <h5>LeetCode</h5>
+                                    <p>u/sandhyaranigeesala</p>
+                                </div>
+                            </a>
+                            <a href="https://www.codechef.com/users/geesalasandhya" target="_blank" rel="noopener noreferrer" class="coding-card glass-card">
+                                <div class="coding-icon"><i class="fa-solid fa-terminal"></i></div>
+                                <div class="coding-info">
+                                    <h5>CodeChef</h5>
+                                    <p>@geesalasandhya</p>
+                                </div>
+                            </a>
+                            <a href="https://www.geeksforgeeks.org/profile/geesalasan622w" target="_blank" rel="noopener noreferrer" class="coding-card glass-card">
+                                <div class="coding-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="coding-info">
+                                    <h5>GeeksforGeeks</h5>
+                                    <p>@geesalasan622w</p>
+                                </div>
+                            </a>
+                            <a href="https://coddy.tech/profile" target="_blank" rel="noopener noreferrer" class="coding-card glass-card">
+                                <div class="coding-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div class="coding-info">
+                                    <h5>Coddy Tech</h5>
+                                    <p>Profile Dashboard</p>
+                                </div>
+                            </a>
+                            <a href="https://www.kaggle.com/" target="_blank" rel="noopener noreferrer" class="coding-card glass-card">
+                                <div class="coding-icon"><i class="fa-solid fa-database"></i></div>
+                                <div class="coding-info">
+                                    <h5>Kaggle</h5>
+                                    <p>AI / ML Community</p>
+                                </div>
+                            </a>
+                            <a href="https://www.hackerrank.com/profile/geesalasandhyar1" target="_blank" rel="noopener noreferrer" class="coding-card glass-card">
+                                <div class="coding-icon"><i class="fa-brands fa-hackerrank"></i></div>
+                                <div class="coding-info">
+                                    <h5>HackerRank</h5>
+                                    <p>@geesalasandhyar1</p>
+                                </div>
+                            </a>
+                            <a href="https://www.naukri.com/code360/profile/0fec8a40-570f-4b60-b8ce-8c5ecfe43970" target="_blank" rel="noopener noreferrer" class="coding-card glass-card">
+                                <div class="coding-icon"><i class="fa-solid fa-cubes"></i></div>
+                                <div class="coding-info">
+                                    <h5>Naukri Code360</h5>
+                                    <p>Coding Ninja Profile</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education (Dual Timelines) -->
+        <section id="experience" class="experience-section section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Career & Studies</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <p class="section-desc">Timeline of internships and academic history showing consistent record of excellence and practical development experience.</p>
+                </div>
+
+                <div class="dual-timelines">
+                    <!-- Column 1: Internship Experience -->
+                    <div class="timeline-column reveal">
+                        <h3 class="timeline-column-title"><i class="fa-solid fa-briefcase text-accent"></i> Internship History</h3>
+                        <div class="timeline-block">
+                            <div class="timeline-item-header">
+                                <span class="timeline-date">June 2026 – July 2026</span>
+                                <h4 class="timeline-role">Web Development Intern</h4>
+                                <h5 class="timeline-company">Oasis Infobyte</h5>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Developed responsive web pages using HTML5, CSS3, and JavaScript following front-end best practices.</li>
+                                <li>Built clean, maintainable code and improved cross-device UI compatibility.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-block">
+                            <div class="timeline-item-header">
+                                <span class="timeline-date">March 2026 – July 2026</span>
+                                <h4 class="timeline-role">Data Analyst Intern</h4>
+                                <h5 class="timeline-company">ApexPlanet Software Pvt. Ltd.</h5>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Performed data cleaning, preprocessing, and visualization on real-world datasets using Python.</li>
+                                <li>Produced analytical reports and actionable insights to support business decision-making.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Education -->
+                    <div class="timeline-column reveal delay-1">
+                        <h3 class="timeline-column-title"><i class="fa-solid fa-graduation-cap text-accent"></i> Education</h3>
+                        
+                        <div class="timeline-block">
+                            <div class="timeline-item-header">
+                                <span class="timeline-date">2023 – 2027</span>
+                                <h4 class="timeline-role">B.Tech – CSE (AI & ML)</h4>
+                                <h5 class="timeline-company">Sridevi Women's Engineering College</h5>
+                                <span class="timeline-score">CGPA: 9.03 / 10</span>
+                            </div>
+                            <p class="timeline-extra-text">Hyderabad, India. Specialized in Machine Learning methodologies, database management systems, and core computer science concepts.</p>
+                        </div>
+
+                        <div class="timeline-block">
+                            <div class="timeline-item-header">
+                                <span class="timeline-date">2021 – 2023</span>
+                                <h4 class="timeline-role">Intermediate (MPC) – Class XII</h4>
+                                <h5 class="timeline-company">Board of Intermediate Education, Telangana</h5>
+                                <span class="timeline-score">Score: 96.2%</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block">
+                            <div class="timeline-item-header">
+                                <span class="timeline-date">2021 Passed</span>
+                                <h4 class="timeline-role">Secondary School Certificate – Class X</h4>
+                                <h5 class="timeline-company">Board of Secondary Education, Telangana</h5>
+                                <span class="timeline-score">GPA: 10 / 10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interests Block -->
+                <div class="interests-container reveal">
+                    <h4 class="interests-title">Interests & Hobbies</h4>
+                    <div class="interests-grid">
+                        <span class="interest-badge"><i class="fa-solid fa-laptop-code"></i> Web Development</span>
+                        <span class="interest-badge"><i class="fa-solid fa-video"></i> Video Editing</span>
+                        <span class="interest-badge"><i class="fa-solid fa-compass"></i> Exploring New Technologies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info reveal">
+                        <span class="section-tag">Let's Connect</span>
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="contact-desc">I am actively looking for career opportunities in AI & ML engineering and Frontend Web Development. Feel free to reach out to discuss collaboration, internship openings, or projects!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <span class="detail-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:sandhyaranigeesala@gmail.com" class="detail-link">sandhyaranigeesala@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="detail-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p class="detail-text">Hyderabad, Telangana, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-block">
+                            <h4>Find me on</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/sandhyarani-geesala-0957172aa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com/GeesalaSandhyarani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-container reveal delay-1">
+                        <div class="glass-card contact-card">
+                            <form id="contact-form" class="contact-form" novalidate>
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-user input-icon"></i>
+                                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                    </div>
+                                    <span class="error-msg" id="name-error">Please enter your name</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-envelope input-icon"></i>
+                                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                    </div>
+                                    <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <div class="input-wrapper textarea-wrapper">
+                                        <i class="fa-regular fa-message input-icon"></i>
+                                        <textarea id="message" name="message" rows="5" placeholder="Hi Sandhya, I'd like to connect regarding..." required></textarea>
+                                    </div>
+                                    <span class="error-msg" id="message-error">Please enter a message</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                    <span class="btn-text">Send Message</span>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </button>
+                            </form>
+
+                            <!-- Success Modal/State Card inside Contact Card -->
+                            <div class="form-success-state" id="form-success">
+                                <div class="success-icon-box">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <h3 class="success-title">Message Sent!</h3>
+                                <p class="success-text">Thank you for reaching out. I've received your message and will get back to you within 24 hours.</p>
+                                <button type="button" class="btn btn-secondary" id="reset-form-btn">Send another message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p class="footer-copyright">&copy; 2026 Geesala Sandhyarani. Crafted with obsidian gradients, HTML5, CSS3, & JS.</p>
+            <div class="footer-bottom-links">
+                <a href="#home">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Case Study Modal (Dynamic Overlay) -->
+    <div class="modal-overlay" id="case-study-modal" aria-hidden="true" role="dialog">
+        <div class="modal-container glass-card">
+            <!-- Modal Close Trigger -->
+            <button class="modal-close" id="modal-close-btn" aria-label="Close Project Details">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <!-- Modal Scrollable Content -->
+            <div class="modal-content">
+                <div class="modal-header-section">
+                    <div class="modal-tags" id="modal-tags">
+                        <!-- Filled by JS -->
+                    </div>
+                    <h2 class="modal-title" id="modal-title">Project Name</h2>
+                    <p class="modal-subtitle" id="modal-subtitle">Brief subtitle</p>
+                </div>
+
+                <div class="modal-hero-image-wrapper">
+                    <img src="" alt="Project UI Showcase" class="modal-hero-image" id="modal-image">
+                </div>
+
+                <!-- Case Study Details Grid -->
+                <div class="modal-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Stack</span>
+                        <span class="meta-value" id="modal-role">Tech Stack</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Category</span>
+                        <span class="meta-value" id="modal-timeline">Category Description</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Key Objective</span>
+                        <span class="meta-value" id="modal-impact">Core Value</span>
+                    </div>
+                </div>
+
+                <!-- GitHub Project Link -->
+                <div class="modal-repo-wrapper" style="margin-bottom: 28px; text-align: left;">
+                    <a href="" id="modal-repo-link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 10px 20px; font-size: 13px; border-radius: 6px;">
+                        <i class="fa-brands fa-github text-accent"></i> <span>View Code on GitHub</span>
+                    </a>
+                </div>
+
+                <hr class="modal-divider">
+
+                <!-- Detailed Text Sections -->
+                <div class="modal-body-sections">
+                    <div class="modal-body-block">
+                        <h3 class="modal-section-heading"><span class="glow-bullet"></span> The Problem</h3>
+                        <p class="modal-body-text" id="modal-problem">Problem text goes here...</p>
+                    </div>
+
+                    <div class="modal-body-block">
+                        <h3 class="modal-section-heading"><span class="glow-bullet"></span> The Solution</h3>
+                        <p class="modal-body-text" id="modal-solution">Solution text goes here...</p>
+                    </div>
+
+                    <div class="modal-body-block">
+                        <h3 class="modal-section-heading"><span class="glow-bullet"></span> Key Implementation Details</h3>
+                        <p class="modal-body-text" id="modal-ux-flow">UX flow description...</p>
+                    </div>
+
+                    <div class="modal-body-block">
+                        <h3 class="modal-section-heading"><span class="glow-bullet"></span> Environmental & Safety Impact</h3>
+                        <p class="modal-body-text" id="modal-final-impact">Final impact details...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
