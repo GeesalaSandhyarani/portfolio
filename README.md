@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository! This is a premium, high-fidelity si
 
 The visual layout features a deep obsidian dark mode theme inspired by modern web agency aesthetics, highlighted by glassmorphism card UI structures, floating interactive navigations, and customized hover elements.
 
-Live Link: [https://github.com/GeesalaSandhyarani/portfolio](https://github.com/GeesalaSandhyarani/portfolio)
+Live Link: [https://github.com/GeesalaSandhyarani/portfolio](https://portfolio-beryl-seven-95.vercel.app/)
 
 ---
 
